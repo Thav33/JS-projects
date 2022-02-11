@@ -60,17 +60,38 @@ img {
 button.increment {
   border: 2px solid black;
   padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
   /* background: green; */
 }
 button.increment:hover{
-  padding: 12px;
+  font-weight: 600;
 }
 
 button.reset {
   border: 2px solid black;
   padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
+button.reset:hover{
+  font-weight: 600;
+}
+
 button.decrement {
   border: 2px solid black;
   padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+button.decrement:hover{
+  font-weight: 600;
+}
+
+#increment-color-btn{
+  background-color: green;
+}
+
+#decrement-color-btn{
+  background-color: #ff0000;
 }
