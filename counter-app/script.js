@@ -1,7 +1,5 @@
 "use strict";
 
-const counterDiv = document.querySelector('.counter-div');
-
 const count = document.querySelector('.count');
 
 const incrementBtn = document.querySelector('.increment');
@@ -9,6 +7,8 @@ const incrementBtn = document.querySelector('.increment');
 const resetBtn = document.querySelector('.reset');
 
 const decrementBtn = document.querySelector('.decrement');
+
+const paragraphDiv = document.querySelector('.paragraph');
 
 //increment function
   incrementBtn.addEventListener('click', (e) => {
@@ -18,7 +18,10 @@ const decrementBtn = document.querySelector('.decrement');
     count.innerHTML++;
       //btn background changes to color green when clicked
     incrementBtn.id = 'increment-color-btn';
-  });
+    setColor();
+
+    paragraphDiv.append(`${count.innerHTML}, `);
+    });
 
   //decrement function
   decrementBtn.addEventListener('click', (e) => {
@@ -27,10 +30,32 @@ const decrementBtn = document.querySelector('.decrement');
     count.innerHTML--;
       //btn background changes to color red when clicked
     decrementBtn.id = 'decrement-color-btn'
+    setColor();
+
+    paragraphDiv.append(`${count.innerHTML},`);
+
   })
 
-  //reset function
+  //reset functin
   resetBtn.addEventListener('click', (e) => {
        //'count' resets to 0 when btn is clicked
     count.innerHTML = 0;
+    
+    paragraphDiv.append(count.innerHTML);
+    
   })
+
+  //function to add color to 'count' based on conditions
+ 
+  const setColor = () => {
+    if(count.innerHTML > 0) {
+      count.style.color = 'green';
+    } else if(count.innerHTML < 0) {
+      count.style.color = 'red';
+    } else {
+      count.style.color = 'white';
+    }
+  }
+  setColor();
+
+  
