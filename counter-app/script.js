@@ -10,6 +10,8 @@ const decrementBtn = document.querySelector('.decrement');
 
 const paragraphDiv = document.querySelector('.paragraph');
 
+const removeCount = document.querySelector('.remove');
+
 //increment function
   incrementBtn.addEventListener('click', (e) => {
     // console.log('code is working...');
@@ -40,10 +42,13 @@ const paragraphDiv = document.querySelector('.paragraph');
   resetBtn.addEventListener('click', (e) => {
        //'count' resets to 0 when btn is clicked
     count.innerHTML = 0;
-    
     paragraphDiv.append(count.innerHTML);
     
   })
+
+  removeCount.addEventListener('click', (e) => {
+    count.remove();
+  } )
 
   //function to add color to 'count' based on conditions
  
