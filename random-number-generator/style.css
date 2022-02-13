@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: darkslategrey;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter-div {
+  width: 50rem;
+  height: 30rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1rem;
+  background-color: #000;
+  filter: opacity(80%);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.counter-div > * {
+  margin: 3rem 0;
+}
+
+.count {
+  font-size: 4rem;
+  margin: 12px 0 12px 0;
+}
+
+button.generate {
+  border: 2px solid black;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+button.generate:hover{
+  font-weight: 600;
+}
