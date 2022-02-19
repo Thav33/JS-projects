@@ -26,58 +26,38 @@
 
     if( (userChoice == "paper" && compChoice == "rock") || (userChoice == "scissors" && compChoice == "paper") || (userChoice == "rock" && compChoice == "scissors") ){
       winner();
-      console.log('WINNERRR');
     } else if(userChoice == compChoice) {
       draw();
-      console.log('DRAWWWWWW');
     } else {
       lose();
-      console.log('LOSERRRR');
     }
+
+    //'result' div display = none after 2secs
+    const playOn = () => {
+      i =Math.floor(Math.random() * 3);
+      compChoice = choices[i];
+      box.style.display = 'none';
+    }
+    setTimeout(playOn, 2000);
 
     function winner(){
       userPoint++;
       const winnerStatus = document.querySelector('.result');
-      winnerStatus.innerHTML = 'YOU WONNNN';
+      winnerStatus.innerHTML = 'USER WON!';
+      winnerStatus.style.color = 'green';
     }
+
     function draw(){
       const winnerStatus = document.querySelector('.result');
-      winnerStatus.innerHTML = 'YOU DREW';
+      winnerStatus.innerHTML = 'DRAW';
+      winnerStatus.style.color = 'black';
+
     }
+
     function lose(){
       compPoint++;
       const winnerStatus = document.querySelector('.result');
-      winnerStatus.innerHTML = 'YOU LOST';
+      winnerStatus.innerHTML = 'YOU LOST!';
+      winnerStatus.style.color = 'red';
     }
-
-
   }
-
-
-
-
-
-  //   if(userChoice === 'paper' && compChoice === 'rock' ||
-  //       userChoice === 'scissors' && compChoice === 'paper' || 
-  //       userChoice === 'rock' && compChoice === 'scissors') {
-          
-  //         winner();
-
-  //       } else if(userChoice === compChoice) {
-          
-  //         draw();
-
-  //       } else {
-  //         lose();       
-  //    }
-  // }
- 
-  // let winner = () => {
-  //   console.log('you won');
-  // }
-  // const draw = () => {
-  //   console.log('you drew');
-  // }
-  // const lose = () => {
-  //   console.log('you lost');
-  // }

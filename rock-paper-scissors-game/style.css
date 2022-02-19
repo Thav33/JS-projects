@@ -6,6 +6,7 @@ body{
 	margin: 0;
 	padding: 0;
   background: url("img/bg.jpg")fixed;
+	background-color: black;
 }
 
 header{
@@ -159,21 +160,24 @@ header h1{
   background-color: rgba(black, 0.5);;
     color: #000;
 }
-#result{
+.result {
 	position: relative;
 	width: 25%;
 }
-#result p{
+
+span.result{
 	position: absolute;
 	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;
+	color: #000;
 	font-size: 30px;
+	font-weight: bold;
 	width: 100%;
 	margin: 0;
 	text-align: center;
 }
+
 .who{
 	position: absolute;
 	bottom: 5%;
@@ -181,48 +185,6 @@ header h1{
 	transform: translateX(-50%);
 	color: white;
 	font-size: 20px;
-}
-.green{
-	width: 70px;
-	height: 70px;
-    margin: 5px;
-    border: 3px solid green;
-    box-shadow: 0 0 10px green;
-    border-radius: 50%;
-    color: #34495e;
-    font-size: 35px;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-    transition: .3s;
-}
-.red{
-	width: 70px;
-	height: 70px;
-    margin: 5px;
-    border: 3px solid red;
-    box-shadow: 0 0 10px red;
-    border-radius: 50%;
-    color: #34495e;
-    font-size: 35px;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-    transition: .3s;
-}
-.gray{
-	width: 70px;
-	height: 70px;
-    margin: 5px;
-    border: 3px solid #292928;
-    box-shadow: 0 0 10px #292928;
-    border-radius: 50%;
-    color: #34495e;
-    font-size: 35px;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-    transition: .3s;
 }
 
 @keyframes example {
