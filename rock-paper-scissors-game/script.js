@@ -21,8 +21,8 @@
     let compDiv = document.querySelector('.compObject');
     compDiv.innerHTML = '<i class="far fa-hand-' +compChoice+ '">';
 
-    console.log(userChoice);
-    console.log(compChoice);
+    // console.log(userChoice);
+    // console.log(compChoice);
 
     if( (userChoice == "paper" && compChoice == "rock") || (userChoice == "scissors" && compChoice == "paper") || (userChoice == "rock" && compChoice == "scissors") ){
       winner();
