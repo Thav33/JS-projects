@@ -24,4 +24,4 @@ generateRandom.addEventListener('click', (e) => {
 
   // console.log('Generate Random number');
 
-})
+});
