@@ -1,0 +1,55 @@
+/* Box Model */
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(235, 235, 235);
+}
+
+section, h1, h2, form{
+  text-align: center;
+  width: 100%;
+  margin-top: 2%;
+}
+
+button{
+  display: block;
+  margin: 20px auto;
+  border: 2px solid black;
+  padding: 10px 10px;
+}
+
+h5{
+  font-size: 30px;
+  color: 000;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+input {
+	box-sizing: border-box;
+	font-size: 13px;
+	vertical-align: top;
+}
+
+.search {
+	padding: 0 30px;
+	font-size: 18px;
+	/* width: 60%; */
+	max-width: 400px;
+	height: 80px;
+	border: 1px solid darken(white, 30%);
+	border-radius: 20px 20px 20px 20px;
+}
+
+.submit {
+	cursor: pointer;
+	border: none;
+	background:#1E1E20;
+  color: aliceblue;
+	border-radius: 20px 0 20px 0;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+}
