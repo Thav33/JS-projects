@@ -23,6 +23,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.strong{
+  font-weight: 600;
+}
 
 .tempDiv {
   width: 45%;
