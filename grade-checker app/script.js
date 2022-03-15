@@ -5,7 +5,7 @@ const checkGrade = () => {
   const inputName = document.querySelector('.inputName').value;
 
   //convert form inpurt to datatype 'Number'
-  const inputGrade = +(document.querySelector('.inputGrade')).value;
+  const inputGrade = document.querySelector('.inputGrade').value;
 
   //form verification
   //if name input is empty, don't run
@@ -18,10 +18,10 @@ const checkGrade = () => {
   
   
   if(inputGrade === '') { 
-    document.querySelector('.err').innerHTML = (`Grade can't be empty`);
+    document.querySelector('.err1').innerHTML = (`Grade can't be empty`);
     return false;
   } else {
-    document.querySelector('.err').innerHTML = ''; 
+    document.querySelector('.err1').innerHTML = ''; 
   }
 
   if(inputName && (inputGrade >= 75) && (inputGrade <= 100) ){

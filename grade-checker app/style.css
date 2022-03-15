@@ -66,3 +66,7 @@ div > .output {
 color: red;
 font-size: 15px;
 }
+.err1{
+  color: red;
+  font-size: 15px;
+  }
