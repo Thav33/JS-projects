@@ -7,6 +7,23 @@ const checkGrade = () => {
   //convert form inpurt to datatype 'Number'
   const inputGrade = +(document.querySelector('.inputGrade')).value;
 
+  //form verification
+
+  // let err = true;
+  if(inputName === '') { 
+    document.querySelector('.err').innerHTML = (`Name can't be empty`);
+    return false;
+  } else {
+    document.querySelector('.err').innerHTML = ''; 
+  } 
+  
+  if(inputGrade === '') { 
+    document.querySelector('.err').innerHTML = (`Grade can't be empty`);
+    return false;
+  } else {
+    document.querySelector('.err').innerHTML = ''; 
+  }
+
   if(inputName && (inputGrade >= 75) && (inputGrade <= 100) ){
 
     console.log(`Hello ${inputName}, You got A!`)
@@ -27,14 +44,14 @@ const checkGrade = () => {
     console.log(`Hello ${inputName}, you Got D `)
     document.querySelector('.output').innerHTML = (`Hello ${inputName}, you Got D! `)
   
-  } else if(inputName && (inputGrade < 40 && inputGrade >= 0)) {
+  } else if(inputName && (inputGrade < 40 && inputGrade >= 0 && inputGrade !== '')) {
 
     console.log(`Hello ${inputName}, you Got F `)
     document.querySelector('.output').innerHTML = (`Hello ${inputName}, you Got F! `)
   
   } else{
     console.log(`Retake`)
-    document.querySelector('.output').innerHTML = (`Hello there! Retake.`)
+    document.querySelector('.output').innerHTML = (`Invalid! Retake.`)
   }
 }
 
