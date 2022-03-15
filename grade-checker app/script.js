@@ -8,14 +8,14 @@ const checkGrade = () => {
   const inputGrade = +(document.querySelector('.inputGrade')).value;
 
   //form verification
-
-  // let err = true;
+  //if name input is empty, don't run
   if(inputName === '') { 
     document.querySelector('.err').innerHTML = (`Name can't be empty`);
     return false;
   } else {
     document.querySelector('.err').innerHTML = ''; 
   } 
+  
   
   if(inputGrade === '') { 
     document.querySelector('.err').innerHTML = (`Grade can't be empty`);
