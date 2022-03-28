@@ -22,7 +22,7 @@ html {
   color: #eaeaea;
 }
 
-.calculator-screen {
+.operation-expression {
   width: 100%;
   font-size: 3rem;
   height: 50px;
@@ -39,7 +39,7 @@ html {
   border-left: solid 1px #fff;
 }
 
-.calculator-screen2 {
+.final-score {
   width: 100%;
   font-size: 3rem;
   height: 50px;
